@@ -19,6 +19,10 @@ resource "aws_instance" "web" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "HelloWorld"   
+    admin_contact  = "pdahiya@qualcomm.com"
+    service_data   = "env=DEV"
+    service_id     = "github-runner-poc"
+
   }
 }
